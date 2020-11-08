@@ -53,6 +53,7 @@ function App() {
   }
   useEffect(()=>{
     fetchImages();
+    // eslint-disable-next-line
   },[page])
   useEffect(()=>{
     const event = window.addEventListener('scroll',()=>{
@@ -63,6 +64,7 @@ function App() {
         }
     })
     return()=> window.removeEventListener('scroll',event)
+    // eslint-disable-next-line
   },[])
 
   return <main>
@@ -81,7 +83,7 @@ function App() {
           return <Photo key={photo.id}{...photo}/>
         })}
       </div>
-      {loading && <h2 className="loading"></h2>}
+      {loading && <h2 className="loading">Loading...</h2>}
     </section>
   </main>
 }
