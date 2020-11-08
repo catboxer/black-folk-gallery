@@ -1,11 +1,12 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import React, { useState, useEffect } from 'react'
 //import { FaSearch } from 'react-icons/fa'
 import Photo from './Photo'
-// const clientID = `?client_id=${process.env.REACT_APP_ACCESS_KEY}`
 //const mainUrl = `https://api.unsplash.com/photos/`
-//git const searchUrl = `https://api.unsplash.com/search/photos/`
-const collectionUrl =  `https://api.unsplash.com/collections/43739255/photos/`
+//const searchUrl = `https://api.unsplash.com/search/photos/`
+
+const collectionUrl = `https://api.unsplash.com/collections/43739255/photos/`
+
 const clientID = `?client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}`
 function App() {
   const [loading, setLoading] = useState(false);
@@ -22,6 +23,7 @@ function App() {
     // const urlQuery =`&query=${query}`
     const urlPage =`&page=${page}`
     url=`${collectionUrl}${clientID}${urlPage}`
+
   // if(query){
   //   url =`${searchUrl}${clientID}${urlPage}${urlQuery}`
   // } else {
