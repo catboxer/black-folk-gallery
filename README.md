@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Black Folks
+A prescription to help undo our white supremacist conditioning. 
+**Recommended Dose: Scrolling 5 minutes a day for 1 year.**
+Photo collection of Black People from Unsplash with positive descriptive words overlaid with mouse rollover. 
+Code modified from project by @john-smilga.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -14,10 +18,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### API key
+You will need to create a .env file and enter your unsplash api code into variable REACT_APP_UNSPLASH_API_KEY=
 
 ### `npm run build`
 
